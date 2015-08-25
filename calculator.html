@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+  <body>
+<input type="text" id="num1" height="10" width="100" value="Enter First Number" onClick="rub()"/>
+<br>
+<button type="button1" onClick="set()">+</button>
+<button type="button2" onClick="set1()">-</button>
+<button type="button3" onClick="set1()">*</button>
+<button type="button4" onClick="set1()">/</button>
+<br>
+<input type="text" id="num2" height="10" width="100" value="Enter Second Number"  onClick="rub()"/><br>
+<button type="button" onClick="calculate()">Calculate</button>
+<div id="answer"><p>Your answer will be printed here</p></div>
+<input type="text" id="num3" height="10" width="100"/><br>
+<script type="text/javascript">
+<!--
+	function rub(){
+		var num1=document.getElementById('num1');
+		var num2=document.getElementById('num2');
+		if(num1.value.match("Enter First Number")){
+			num1.value="";
+		}else if(num2.value.match("Enter Second Number")){
+			//var num2=document.getElementById('num2');
+			num2.value="";
+		}
+	}
+
+	function calculate(){
+		var num1=document.getElementById('num1');
+		var num2=document.getElementById('num2');
+		var ope=document.getElementById('select');
+		var num3=document.getElementById('num3');
+	//	if(!num1.value.match("") && !num2.value.match("")){
+			if(ope.value.match("+")){
+				var ans=num1+num2;
+				num3.value = ans.value;
+			}
+			if(ope.value.match("-")){
+				var ans=num1-num2;
+				num3.value = ans.value;
+			}
+			if(ope.value.match("*")){
+				var ans=num1*num2;
+				num3.value = ans.value;
+			}
+			if(ope.value.match("/")){
+				var ans=num1/num2;
+				num3.value = ans.value;
+			}
+	//	}
+	}
+//-->
+</script>
+
+</body>
+</html>
+</html>
